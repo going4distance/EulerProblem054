@@ -87,8 +87,10 @@ namespace Csharp_Euler054
         {       /*    int[] card_Val , int high_RankedCard , int high_RankedCard2 , int high_Kicker;    */
             int match = 0;  int temp_card = 0;  int temp_HRC1 = 0; int temp_HRC2 = 0;
             HandRank temp_Hand = HandRank.High_Card;
+            // Looks for Quads, trips or a pair.  Then if not quads, looks again to check for 2 pair or Full House.
+            //  If the final hand is less than a Full House, it will also determine and set the kicker.
             for (int x = 0; x < 5; x++)
-            {
+            {  
                 match = 0;
                 for(int y = 0; y < 5; y++)
                 {
