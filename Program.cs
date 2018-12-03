@@ -24,7 +24,7 @@ namespace Csharp_Euler054
             for (int x=0; x<1000; x++)
             {
                 hand1.Clear(); hand2.Clear();
-                hand1 = hand1.Append(file.ReadLine());// does not store the end-of-line char.
+                hand1 = hand1.Append(file.ReadLine());
                 hand2 = hand2.Append(hand1.ToString(15, 14));
                 hand1.Remove(14, 15);
                 
